@@ -3,3 +3,6 @@ pillow
 matplotlib
 pandas
 sklearn
+transformers
+tokenizers
+math
