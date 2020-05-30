@@ -1,3 +1,5 @@
 numpy
 pillow
 matplotlib
+pandas
+sklearn
