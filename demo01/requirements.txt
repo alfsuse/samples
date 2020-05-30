@@ -5,3 +5,4 @@ pandas
 sklearn
 transformers
 tokenizers
+nltk
