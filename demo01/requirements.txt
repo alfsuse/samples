@@ -1,3 +1,8 @@
 numpy
 pillow
 matplotlib
+pandas
+sklearn
+transformers
+nltk
+
