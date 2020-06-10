@@ -4,10 +4,9 @@ import numpy as np
 
 from skimage import io
 
-import ImageSequence
-import Image
+from PIL import Image, ImageSequence
 import gifmaker
-sequence = []
+
 
 vol = io.imread("https://s3.amazonaws.com/assets.datacamp.com/blog_assets/attention-mri.tif")
 volume = vol.T
@@ -95,11 +94,14 @@ fig.update_layout(
 )
 
 im = fig.show()
+sequence = []
 
- # im is your original image
+im = Image.open(im)
+
+# im is your original image
 frames = [frame.copy() for frame in ImageSequence.Iterator(im)]
 
- # write GIF animation
-fp = open("/output/out.gif", "wb")
+# write GIF animation
+fp = open("out.gif", "wb")
 gifmaker.makedelta(fp, frames)
 fp.close()
