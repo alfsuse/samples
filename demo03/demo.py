@@ -4,7 +4,7 @@ import numpy as np
 
 from skimage import io
 
-from PIL import Image, ImageSequence, 
+from PIL import Image, ImageSequence 
 from Pillow import gifmaker
 
 
