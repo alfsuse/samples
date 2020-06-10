@@ -102,6 +102,6 @@ im = Image.open(im)
 frames = [frame.copy() for frame in ImageSequence.Iterator(im)]
 
 # write GIF animation
-fp = open("out.gif", "wb")
+fp = open("/output/out.gif", "wb")
 gifmaker.makedelta(fp, frames)
 fp.close()
