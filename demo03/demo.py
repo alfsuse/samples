@@ -4,8 +4,8 @@ import numpy as np
 
 from skimage import io
 
-from PIL import Image, ImageSequence
-import gifmaker
+from PIL import Image, ImageSequence, 
+from Pillow import gifmaker
 
 
 vol = io.imread("https://s3.amazonaws.com/assets.datacamp.com/blog_assets/attention-mri.tif")
