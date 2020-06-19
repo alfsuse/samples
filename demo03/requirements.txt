@@ -1,0 +1,4 @@
+pil
+scikit-image
+plotly
+numpy
