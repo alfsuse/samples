@@ -2,3 +2,4 @@ pillow
 scikit-image
 plotly
 numpy
+jupyter
