@@ -1,4 +1,4 @@
-pillow
+pil
 scikit-image
 plotly
 numpy
