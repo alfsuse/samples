@@ -3,3 +3,4 @@ scikit-image
 plotly
 numpy
 jupyter
+flask
