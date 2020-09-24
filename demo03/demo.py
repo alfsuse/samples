@@ -15,7 +15,7 @@ static_html_path = os.path.join('output/', 'demo.html')
 
 
 #file_io.write_string_to_file(static_html_path, rendered_template)
- file_io.write_string_to_file(static_html_path, static_html_path)
+file_io.write_string_to_file(static_html_path, static_html_path)
 
 
 
