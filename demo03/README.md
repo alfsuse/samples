@@ -1,1 +1,1 @@
-pip install -r demo03/requirements.txt && jupyter nbconvert --to html --execute demo03/demo.ipynb --ExecutePreprocessor.timeout=-1 --output-dir=output && demo03/demo.py
+pip install -r demo03/requirements.txt && jupyter nbconvert --to html --execute demo03/demo.ipynb --ExecutePreprocessor.timeout=-1 --output-dir=output && python3 demo03/demo.py
