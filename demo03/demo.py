@@ -2,7 +2,7 @@ import os
 import json
 from tensorflow.python.lib.io import file_io as file_io
 
-static_html_path = os.path.join('/output/', 'demo.html')
+static_html_path = os.path.join('output/', 'demo.html')
 rendered_template = """
     <html>
         <head>
@@ -22,7 +22,7 @@ metadata = {
 'outputs' : [{
     'type': 'web-app',
     'storage': 'inline',
-    'source': '/output/demo.html',
+    'source': 'output/demo.html',
 }, {
     'type': 'web-app',
     'storage': 'inline',
