@@ -2,7 +2,7 @@ import os
 import json
 from tensorflow.python.lib.io import file_io as file_io
 
-
+static_html_path = os.path.join('/output/', 'demo.html')
 rendered_template = """
     <html>
         <head>
@@ -11,9 +11,9 @@ rendered_template = """
         <body>
             <img src={}>
         </body>
-    </html>""".format(image_url)
+    </html>""".format(static_html_path)
 
-static_html_path = os.path.join('/output/', 'demo.html')
+
 file_io.write_string_to_file(static_html_path, rendered_template)
 
 
