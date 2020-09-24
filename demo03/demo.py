@@ -3,18 +3,19 @@ import json
 from tensorflow.python.lib.io import file_io as file_io
 
 static_html_path = os.path.join('output/', 'demo.html')
-rendered_template = """
-    <html>
-        <head>
-            <title>correlation image</title>
-        </head>
-        <body>
-            <img src={}>
-        </body>
-    </html>""".format(static_html_path)
+#rendered_template = """
+#    <html>
+#        <head>
+#            <title>correlation image</title>
+#        </head>
+#        <body>
+#            <img src={}>
+#        </body>
+#   </html>""".format(static_html_path)
 
 
-file_io.write_string_to_file(static_html_path, rendered_template)
+#file_io.write_string_to_file(static_html_path, rendered_template)
+ file_io.write_string_to_file(static_html_path, static_html_path)
 
 
 
