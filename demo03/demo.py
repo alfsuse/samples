@@ -1,10 +1,22 @@
 import os
 import json
 from tensorflow.python.lib.io import file_io as file_io
-from flask import Flask, flash, render_template, request, redirect, url_for, send_from_directory
+
+
+rendered_template = """
+    <html>
+        <head>
+            <title>correlation image</title>
+        </head>
+        <body>
+            <img src={}>
+        </body>
+    </html>""".format(image_url)
 
 static_html_path = os.path.join('/output/', 'demo.html')
 file_io.write_string_to_file(static_html_path, rendered_template)
+
+
 
 metadata = {
 'outputs' : [{
