@@ -4,4 +4,4 @@ def add(a: float, b: float) -> float:
     '''Calculates sum of two arguments'''
     print(a, '+', b, '=', a + b)
     return a + b
-print(add.output)
+print(add)
