@@ -1,7 +1,6 @@
-a=7
-b=8
-def add(a: float, b: float) -> float:
-    '''Calculates sum of two arguments'''
-    print(a, '+', b, '=', a + b)
-    return a + b
+import sys
+a=sys.argv[1]
+b=sys.argv[2]
+print(a, '+', b, '=', a + b)
+
 
