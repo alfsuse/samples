@@ -1,7 +1,7 @@
 plugin-name: kubeflow-katib
 namespace: "kubeflow"
 yaml:
-  - url: "/metrics-label.yaml"
+  - url: "https://raw.githubusercontent.com/alfsuse/samples/master/v2/kubeflow/katib/metrics-label.yaml"
     type: "file"    
   - url: "github.com/kubeflow/manifests/tf-training/tf-job-crds/base"
     type: "kustomize"  
