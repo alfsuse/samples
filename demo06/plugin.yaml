@@ -1,0 +1,60 @@
+plugin-name: kubeflow-katib
+namespace: "kubeflow"
+yaml:
+  - url: "https://raw.githubusercontent.com/manifests/tf-training/tf-job-crds/base"
+    type: "kustomize"
+  
+  - url: "https://raw.githubusercontent.com/manifests/tf-training/tf-job-operator/base"
+    type: "kustomize"
+
+  - url: "https://raw.githubusercontent.com/manifests/pytorch-job/pytorch-job-crds/base"
+    type: "kustomize"
+  
+  - url: "https://raw.githubusercontent.com/manifests/pytorch-job/pytorch-operator/base"
+    type: "kustomize"
+  
+  -url: "https://raw.githubusercontent.com/katib/manifests/v1beta1/0-namespace.yaml"
+   type: "file"
+
+   -url: "https://raw.githubusercontent.com/katib/manifests/v1beta1/katib-controller/crd-experiment.yaml"
+   type: "file"
+   -url: "https://raw.githubusercontent.com/katib/manifests/v1beta1/katib-controller/crd-suggestion.yaml"
+   type: "file"
+   -url: "https://raw.githubusercontent.com/katib/manifests/v1beta1/katib-controller/crd-trial.yaml"
+   type: "file"
+   -url: "https://raw.githubusercontent.com/katib/manifests/v1beta1/katib-controller/katib-config.yaml"
+   type: "file"
+   -url: "https://raw.githubusercontent.com/katib/manifests/v1beta1/katib-controller/katib-controller.yaml"
+   type: "file"
+   -url: "https://raw.githubusercontent.com/katib/manifests/v1beta1/katib-controller/rbac.yaml"
+   type: "file"
+   -url: "https://raw.githubusercontent.com/katib/manifests/v1beta1/katib-controller/secret.yaml"
+   type: "file"
+   -url: "https://raw.githubusercontent.com/katib/manifests/v1beta1/katib-controller/service.yaml"
+   type: "file"
+   -url: "https://raw.githubusercontent.com/katib/manifests/v1beta1/katib-controller/trial-template-configmap.yaml"
+   type: "file"
+
+   -url: "https://raw.githubusercontent.com/katib/manifests/v1beta1/db-manager/deployment.yaml"
+   type: "file"
+   -url: "https://raw.githubusercontent.com/katib/manifests/v1beta1/db-manager/service.yaml"
+   type: "file"
+
+   -url: "https://raw.githubusercontent.com/katib/manifests/v1beta1/pv/pv.yaml"
+   type: "file"
+   -url: "https://raw.githubusercontent.com/katib/manifests/v1beta1/pv/pvc.yaml"
+   type: "file"
+
+   -url: "https://raw.githubusercontent.com/katib/manifests/v1beta1/mysql-db/deployment.yaml"
+   type: "file"
+   -url: "https://raw.githubusercontent.com/katib/manifests/v1beta1/mysql-db/secret.yaml"
+   type: "file"
+   -url: "https://raw.githubusercontent.com/katib/manifests/v1beta1/mysql-db/service.yaml"
+   type: "file"
+
+   -url: "https://raw.githubusercontent.com/katib/manifests/v1beta1/ui/deployment.yaml"
+   type: "file"
+   -url: "https://raw.githubusercontent.com/katib/manifests/v1beta1/ui/rbac.yaml"
+   type: "file"
+   -url: "https://raw.githubusercontent.com/katib/manifests/v1beta1/ui/service.yaml"
+   type: "file"
