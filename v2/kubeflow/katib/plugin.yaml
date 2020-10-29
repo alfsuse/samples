@@ -22,6 +22,7 @@ yaml:
     type: "file"
   - url: "https://raw.githubusercontent.com/kubeflow/katib/master/manifests/v1beta1/katib-controller/katib-controller.yaml"
     type: "file"
+    
   - url: "https://raw.githubusercontent.com/kubeflow/katib/master/manifests/v1beta1/katib-controller/rbac.yaml"
     type: "file"
   - url: "https://raw.githubusercontent.com/kubeflow/katib/master/manifests/v1beta1/katib-controller/secret.yaml"
