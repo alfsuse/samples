@@ -15,5 +15,5 @@ yaml:
     type: "kustomize"
   - url: "github.com/kubeflow/manifests/katib/components/katib-db-manager"
     type: "kustomize"
-  - url: "github.com/kubeflow/manifests/katib/components/katib-db-mysql"
+  - url: "github.com/kubeflow/manifests/katib/components/atib-db-mysql"
     type: "kustomize"
