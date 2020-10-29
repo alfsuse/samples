@@ -1,7 +1,7 @@
 plugin-name: katib
 namespace: "kubeflow"
 yaml:
-  - url: "github.com/kubeflow/manifests/master/tf-training/tf-job-crds/base/"
+  - url: "github.com/kubeflow/manifests/master/tf-training/tf-job-crds/base"
     type: "kustomize"  
   - url: "github.com/kubeflow/manifests/master/tf-training/tf-job-operator/base"
     type: "kustomize"
@@ -9,5 +9,5 @@ yaml:
     type: "kustomize"  
   - url: "github.com/kubeflow/manifests/master/pytorch-job/pytorch-operator/base"
     type: "kustomize"  
-  - url: "github.com/kubeflow/manifests/master/katib/installs/katib-standalone/"
+  - url: "github.com/kubeflow/manifests/master/katib/installs/katib-standalone"
     type: "kustomize"
