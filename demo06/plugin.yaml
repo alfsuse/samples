@@ -1,5 +1,5 @@
 plugin-name: kubeflow-katib
-namespace: "kubeflow"
+namespace: kubeflow
 yaml:
   - url: "https://raw.githubusercontent.com/manifests/tf-training/tf-job-crds/base"
     type: "kustomize"
