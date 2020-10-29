@@ -1,4 +1,4 @@
-plugin-name: katib
+ugin-name: katib
 namespace: "kubeflow"
 yaml:
   - url: "github.com/kubeflow/manifests/tf-training/tf-job-crds/base"
@@ -9,11 +9,20 @@ yaml:
     type: "kustomize"  
   - url: "github.com/kubeflow/manifests/pytorch-job/pytorch-operator/base"
     type: "kustomize"  
-  - url: "github.com/kubeflow/manifests/katib/components/katib-crds"
+
+  - url: "github.com/kubeflow/manifests/katib/katib-crds/base/experiment-crd.yaml"
+    type: "file"
+  - url: "github.com/kubeflow/manifests/katib/katib-crds/base/suggestion-crd.yaml"
+    type: "file"
+  - url: "github.com/kubeflow/manifests/katib/katib-crds/base/trial-crd.yaml"
+    type: "file"
+  - url: "github.com/kubeflow/manifests/katib/katib-crds/overlays/application/application.yaml"
+    type: "file"
+
+  - url: "github.com/kubeflow/manifests/katib/katib-controller/base"
     type: "kustomize"
-  - url: "github.com/kubeflow/manifests/katib/components/katib-controller"
-    type: "kustomize"
-  - url: "github.com/kubeflow/manifests/katib/components/katib-db-manager"
-    type: "kustomize"
-  - url: "github.com/kubeflow/manifests/katib/components/atib-db-mysql"
-    type: "kustomize"
+  - url: "github.com/kubeflow/manifests/katib/katib-controller/overlays/application/application.yaml"
+    type: "file"
+
+  - url: "github.com/kubeflow/manifests/katib/katib-controller/overlays/application/application.yaml"
+    type: "file"
