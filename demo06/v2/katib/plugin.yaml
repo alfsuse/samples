@@ -14,7 +14,7 @@ yaml:
     type: "kustomize"
   
   - url: "https://raw.githubusercontent.com/katib/manifests/v1beta1/0-namespace.yaml"
-    type: "file"
+   type: "file"
 
   - url: "https://raw.githubusercontent.com/katib/manifests/v1beta1/katib-controller/crd-experiment.yaml"
     type: "file"
