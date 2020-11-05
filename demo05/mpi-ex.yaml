@@ -40,7 +40,7 @@ spec:
              - --batch_size=64
              - --variable_update=horovod
     Worker:
-      replicas: 2
+      replicas: 1
       template:
         spec:
           containers:
