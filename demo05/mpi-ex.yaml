@@ -46,6 +46,6 @@ spec:
           containers:
           - image: mpioperator/tensorflow-benchmarks:latest
             name: tensorflow-benchmarks
-#            resources:
-#              limits:
-#                nvidia.com/gpu: 1
+            resources:
+              limits:
+                nvidia.com/gpu: 0
