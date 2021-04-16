@@ -4,7 +4,7 @@
 
 ```yaml
 api: thest
-    foo: tttt
+    foo: aaaa
 ```
 
 {% api-method method="get" host="" path="" %}
