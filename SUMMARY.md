@@ -10,4 +10,5 @@
 ## CONTRIBUTE
 
 * [This is our page](contribute/this-is-our-page.md)
+* [Page2](contribute/page2.md)
 
